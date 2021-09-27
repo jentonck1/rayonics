@@ -301,12 +301,15 @@ nav ul li a{
     justify-content: space-between;
     align-items: flex-start;
 }
-#map{
-    width: 50%;
+.map{
+    margin-right: 1.8rem;
+}
+.map iframe{
+    width: 550px;
     min-height: 500px;
+    border: 0;
 }
 .contact-page-details {
-    width: 450px;
     background: #f9f9f9;
     padding: 60px 40px 20px;
   }
@@ -389,14 +392,19 @@ footer{
         grid-template-columns: 1fr;
     }
     .contact-page .two-column{
-        display: block;
+        flex-direction: column;
+    }
+    .map{
+        margin-right: 0;
+        width: 100%;
+        height: 450px;
+    }
+    .map iframe{
+      width: 100%;  
+      min-height: 450px;
     }
     .contact-page-details {
         width: 100%;
-    }
-    #map{
-        width: 100%;
-        min-height: 400px;
     }
 
 }
