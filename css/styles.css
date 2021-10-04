@@ -13,12 +13,17 @@ body{
     color: #333;
 }
 header{
-    
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 15px 0;
-    background-color: #fff;
+    padding: 20px 0;
+    transition: .6s;
+    z-index: 1000;
 }
-
+header.sticky{
+    background: #fff;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -216,38 +221,34 @@ nav ul li a{
     padding: 5px;
 }
 
-
 .swiper1{
     width: 100%;
     height: 100vh;
 }
-.swiper-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .slider{
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    place-content: center;
     height: 100%;
-    width: 100%;
-    background-color: #f9f9f9;
 }
 .slider-content{
+    margin: auto 0;
     padding: 10px;
 }
 .slider-image img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 10px;
 }
 .contact-header, .products-header, .about-header{
     background-color: #f9f9f9;
 }
 /*about page*/
 .about-page{
-    padding-top: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .about-grid{
     display: grid;
@@ -258,7 +259,8 @@ nav ul li a{
 
 /*Products page*/
 .products-page{
-    padding-top: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .products-grid{
     display: grid;
@@ -294,7 +296,8 @@ nav ul li a{
 
 /*Contact us page*/
 .contact-page{
-    padding-top: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 .contact-page .two-column{
     display: flex;
@@ -366,6 +369,9 @@ footer{
     .underline{
         width: 80px;
     }
+    .swiper1{
+        margin-top: 50px;
+    }
     .slider{
         grid-template-columns: 1fr;
     }
@@ -373,9 +379,6 @@ footer{
         order: 2;
     }
     .slider-image { 
-        height: 90%;
-        width: 80%;
-        margin: auto;
         order: 1; 
     }
     .slider-image img{

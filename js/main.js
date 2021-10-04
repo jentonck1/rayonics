@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper1', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
   
     // Navigation arrows
@@ -30,6 +31,7 @@ const swiperProducts = new Swiper('.swiper2', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true
   },
 
   // Navigation arrows
@@ -44,3 +46,7 @@ const swiperProducts = new Swiper('.swiper2', {
   },
 });
 
+window.addEventListener('scroll', ()=>{
+  const header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY >0);
+});
