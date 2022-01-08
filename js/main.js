@@ -46,6 +46,35 @@ const swiperProducts = new Swiper('.swiper2', {
   },
 });
 
+const swiperTestimonials = new Swiper('.swiper3', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay:{
+    delay: 5000,
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+
+});
+
 window.addEventListener('scroll', ()=>{
   const header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY >0);

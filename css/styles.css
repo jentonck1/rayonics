@@ -108,6 +108,9 @@ nav ul li a{
 .mt-1{
     margin-top: 1rem;
 }
+.mr-1{
+    margin-right: 1rem;
+}
 .p-1{
     padding: 1rem;
 }
@@ -160,6 +163,10 @@ nav ul li a{
     text-align: center;
     font-size: 3rem;
 }
+.section-heading-left{
+    font-size: 3rem;
+}
+
 
 .subheading{
     font-size: 1.5rem;
@@ -245,6 +252,27 @@ nav ul li a{
 .contact-header, .products-header, .about-header{
     background-color: #f9f9f9;
 }
+.about-home{
+    display: flex;
+    flex-direction: row;
+}
+.about-home .home-about-box-1{
+    flex: .6;
+}
+.about-home .home-about-box-2{
+    flex: .8;
+    padding-left: 2rem;
+}
+
+.swiper3{
+    width: 100%;
+}
+
+.testimonials .swiper3 .swiper-wrapper{
+    padding: 2rem 0;
+}
+
+
 /*about page*/
 .about-page{
     padding-top: 150px;
@@ -383,6 +411,17 @@ footer{
     }
     .slider-image img{
         border-radius: 10px;
+    }
+
+    .about-home{
+        flex-direction: column;
+    }
+    .about-home .home-about-box-1{
+        flex: .2;
+    }
+    .about-home .home-about-box-2{
+        flex: .8;
+        padding-left: 2rem;
     }
     
     .about-grid{
